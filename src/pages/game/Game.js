@@ -7,7 +7,7 @@ import './game.css';
 class Game extends React.Component {
   constructor() {
     super();
-    const client = new Colyseus.Client('ws://retrobikes-server.herokuapp.com');
+    const client = new Colyseus.Client('ws://retrobikes-server.herokuapp.com:2567');
     client.joinOrCreate('my_room').then(room => this.initializeGame(room));
     this.state = {
       areaPhysicalSize: window.innerHeight - 60,
