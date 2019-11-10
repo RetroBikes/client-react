@@ -1,5 +1,6 @@
 ![RetroBikes demo](https://avatars3.githubusercontent.com/u/54962401?s=150)
 # RetroBikes client React
+React client side. Make the physical positions calculations, show the game state on the screen and send the direction changing event to server side.
 
 ## 🏃 Run
  * Do the clone: `https://github.com/RetroBikes/client-react.git`
