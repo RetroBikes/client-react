@@ -3,10 +3,16 @@
 React client side. Make the physical positions calculations, show the game state on the screen and send the direction changing event to server side.
 
 ## 🏃 Run
- * Do the clone: `https://github.com/RetroBikes/client-react.git`
- * `cd client-react`
- * `yarn install`
- * `yarn start`
+`git clone https://github.com/RetroBikes/client-react.git`  
+`cd client-react`  
+`cp .env.local.example .env.local`  
+`yarn install`  
+`yarn start`
+
+## 💾 Environment Variables
+The client React need the **REACT_APP_SERVER_URL** variable to connect with the [server](https://github.com/RetroBikes/server). Just copying the file .env.local.example to .env.local must work on local, if you don't modify the local server url.
+
+Check [this page](https://devcenter.heroku.com/articles/config-vars) to create the environment variable on Heroku app.
 
 ## 💻📲 The client / server communication
 All the heavy logics happen in the server side. The game loop, player steps, collision calculation and goes on. The client side is the simpliest thing possible, just receives the last players virtual location (confused? check the below section) to render on the screen and send the movement events to server. Just like this.  
